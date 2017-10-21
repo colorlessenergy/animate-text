@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.fly-in-text {
+  color: #fff;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text li {
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+  margin-right: 36px;
+  font-weight: 300;
+  font-size: 4em;
+  display: inline-block;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+
+.fly-in-text li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(15px);
+}
+
+.fly-in-text li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fe3a80;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px)
+}
+
+.fly-in-text li:last-child {
+  margin-right: 0;
+}
+
+.fly-in-text.hidden li {
+  opacity: 0;
+}
+
+.fly-in-text.hidden li:nth-child(1) {
+  transform: translateX(-200px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(2) {
+  transform: translateX(20px) translateY(100px);
+}
+.fly-in-text.hidden li:nth-child(3) {
+  transform: translateX(-150px) translateY(-80px);
+}
+.fly-in-text.hidden li:nth-child(4) {
+  transform: translateX(10px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(5) {
+  transform: translateX(-300px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(6) {
+  transform: translateX(20px) translateY(-20px);
+}
+.fly-in-text.hidden li:nth-child(7) {
+  transform: translateX(30px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(8) {
+  transform: translateX(15px) translateY(150px);
+}
+.fly-in-text.hidden li:nth-child(9) {
+  transform: translateX(-300px) translateY(-10px);
+}
+.fly-in-text.hidden li:nth-child(9) {
+  transform: translateX(300px) translateY(10px);
+}
+.fly-in-text.hidden li:nth-child(10) {
+  transform: translateX(-250px) translateY(-50px);
+}
+.fly-in-text.hidden li:nth-child(11) {
+  transform: translateX(-10px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(12) {
+  transform: translateX(-310px) translateY(50px);
+}
+.fly-in-text.hidden li:nth-child(13) {
+  transform: translateX(180px) translateY(-90px);
+}
+.fly-in-text.hidden li:nth-child(14) {
+  transform: translateX(360px) translateY(40px);
+}
